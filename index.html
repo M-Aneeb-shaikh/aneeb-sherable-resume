@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sharable Resume Generator</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="relative">
+    <img class="absolute w-full h-full object-cover -z-10 opacity-25" src="img/bg-pattern.png" alt="bg-image" />
+
+    <div id="content-wrapper" class="relative py-6">
+        <h1 class="text-center text-4xl font-bold uppercase">
+            Sharable Resume Builder
+        </h1>
+        <h2 class="text-center text-2xl font-bold">
+            Milestone Project - 5
+        </h2>
+        <h4 class="text-center font-medium text-lg">Made by: Muhammad Anas</h4>
+        <form id="resume-form" class="my-6 sm:mx-8 lg:mx-[350px] p-6 grid grid-cols-1 gap-6 items-center">
+            <fieldset
+                class="p-4 flex flex-col w-full h-full gap-2 border-2 border-black rounded-lg bg-white/10 backdrop-blur-md">
+                <legend class="text-lg font-semibold uppercase">
+                    personal information
+                </legend>
+                <label class="form-control flex-grow">
+                    <div class="label">
+                        <span class="label-text">Name:</span>
+                    </div>
+                    <input name="name" type="text" placeholder="John Doe" class="text-sm input input-bordered w-full" />
+                </label>
+                <label class="form-control flex-grow">
+                    <div class="label">
+                        <span class="label-text">Phone Number:</span>
+                    </div>
+                    <input name="phone" type="tel" placeholder="0312 34567890"
+                        class="text-sm input input-bordered w-full" />
+                </label>
+
+                <label class="form-control flex-grow">
+                    <div class="label">
+                        <span class="label-text">Email:</span>
+                    </div>
+                    <input name="email" type="email" placeholder="Johndoe@email.com"
+                        class="text-sm input input-bordered w-full" />
+                </label>
+                <!-- Gender -->
+                <div class="label">
+                    <span class="label-text">Gender:</span>
+                </div>
+                <div class="form-control">
+                    <label class="label cursor-pointer w-fit flex gap-3">
+                        <input value="male" type="radio" name="gender" class="radio radio-accent" checked="checked" />
+                        <span class="label-text">Male</span>
+                    </label>
+                </div>
+                <div class="form-control">
+                    <label class="label cursor-pointer w-fit flex gap-3">
+                        <input value="female" type="radio" name="gender" class="radio radio-accent" />
+                        <span class="label-text">Female</span>
+                    </label>
+                </div>
+                <div class="form-control">
+                    <label class="label cursor-pointer w-fit flex gap-3">
+                        <input value="other" type="radio" name="gender" class="radio radio-accent" />
+                        <span class="label-text">Other</span>
+                    </label>
+                </div>
+                <!-- END Gender -->
+                <label class="form-control flex-grow">
+                    <div class="label">
+                        <span class="label-text">Job Title:</span>
+                    </div>
+                    <input name="title" type="text" placeholder="Web Developer"
+                        class="text-sm input input-bordered w-full" />
+                </label>
+
+                <label class="form-control flex-grow">
+                    <div class="label">
+                        <span class="label-text">About:</span>
+                    </div>
+                    <input name="about" type="text"
+                        placeholder="Passionate full stack web developer with a goal to enhance user experience"
+                        class="text-sm input input-bordered w-full" />
+                </label>
+
+                <div class="form-control w-fit">
+                    <label class="label cursor-pointer gap-3">
+                        <input type="checkbox" checked="checked" class="checkbox checkbox-accent" />
+                        <span class="label-text">Use professional</span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset
+                class="p-4 flex flex-col w-full h-full gap-2 border-2 border-black rounded-lg bg-white/10 backdrop-blur-md">
+                <legend class="text-lg font-semibold uppercase">Education</legend>
+                <label class="form-control">
+                    <div class="label">
+                        <span class="label-text">Degree Title:</span>
+                    </div>
+                    <input name="degreeTitle" type="text" placeholder="Bachelors of Science in Computer Science"
+                        class="text-sm input input-bordered w-full" />
+                </label>
+                <label class="form-control">
+                    <div class="label">
+                        <span class="label-text">Degree Institution:</span>
+                    </div>
+                    <input name="degreeInstitute" type="text" placeholder="XYZ Institute, New York, USA"
+                        class="text-sm input input-bordered w-full" />
+                </label>
+                <div class="flex gap-2 w-full">
+                    <label class="form-control flex-grow">
+                        <div class="label">
+                            <span class="label-text">Start Date:</span>
+                        </div>
+                        <input name="degreeStart" type="date" placeholder="Type here"
+                            class="text-sm input input-bordered w-full" />
+                    </label>
+
+                    <label class="form-control flex-grow">
+                        <div class="label">
+                            <span class="label-text">End Date:</span>
+                        </div>
+                        <input name="degreeEnd" type="date" placeholder="Type here"
+                            class="text-sm input input-bordered w-full" />
+                    </label>
+                </div>
+
+            </fieldset>
+
+            <fieldset
+                class="p-4 flex flex-col w-full h-full gap-2 border-2 border-black rounded-lg bg-white/10 backdrop-blur-md">
+                <legend class="text-lg font-semibold uppercase">Experience</legend>
+                <label class="form-control">
+                    <div class="label">
+                        <span class="label-text">Job Title:</span>
+                    </div>
+                    <input name="jobTitle" type="text" placeholder="Bachelors of Science in Computer Science"
+                        class="text-sm input input-bordered w-full" />
+                </label>
+                <label class="form-control">
+                    <div class="label">
+                        <span class="label-text">Employer's Name:</span>
+                    </div>
+                    <input name="jobInstitute" type="text" placeholder="XYZ Institute, New York, USA"
+                        class="text-sm input input-bordered w-full" />
+                </label>
+                <div class="flex gap-2 w-full">
+                    <label class="form-control flex-grow">
+                        <div class="label">
+                            <span class="label-text">Start Date:</span>
+                        </div>
+                        <input name="jobStart" type="date" placeholder="Type here"
+                            class="text-sm input input-bordered w-full" />
+                    </label>
+
+                    <label class="form-control flex-grow">
+                        <div class="label">
+                            <span class="label-text">End Date:</span>
+                        </div>
+                        <input name="jobEnd" type="date" placeholder="Type here"
+                            class="text-sm input input-bordered w-full" />
+                    </label>
+                </div>
+
+            </fieldset>
+
+            <fieldset
+                class="p-4 flex flex-col w-full h-full gap-2 border-2 border-black rounded-lg bg-white/10 backdrop-blur-md">
+                <legend class="text-lg font-semibold uppercase">Skills</legend>
+                <div class="form-control">
+                    <label class="w-fit flex gap-3 label cursor-pointer">
+                        <input name="skill" value="HTML" type="checkbox" class="checkbox checkbox-accent" />
+                        <span class="label-text">HTML</span>
+                    </label>
+                </div>
+                <div class="form-control">
+                    <label class="w-fit flex gap-3 label cursor-pointer">
+                        <input name="skill" value="CSS" type="checkbox" class="checkbox checkbox-accent" />
+                        <span class="label-text">CSS</span>
+                    </label>
+                </div>
+                <div class="form-control">
+                    <label class="w-fit flex gap-3 label cursor-pointer">
+                        <input name="skill" value="TailwindCSS" type="checkbox" class="checkbox checkbox-accent" />
+                        <span class="label-text">TailwindCSS</span>
+                    </label>
+                </div>
+                <div class="form-control">
+                    <label class="w-fit flex gap-3 label cursor-pointer">
+                        <input name="skill" value="JavaScript" type="checkbox" class="checkbox checkbox-accent" />
+                        <span class="label-text">JavaScript</span>
+                    </label>
+                </div>
+                <div class="form-control">
+                    <label class="w-fit flex gap-3 label cursor-pointer">
+                        <input name="skill" value="Python" type="checkbox" class="checkbox checkbox-accent" />
+                        <span class="label-text">Python</span>
+                    </label>
+                </div>
+                <div class="form-control">
+                    <label class="w-fit flex gap-3 label cursor-pointer">
+                        <input name="skill" value="PHP" type="checkbox" class="checkbox checkbox-accent" />
+                        <span class="label-text">PHP</span>
+                    </label>
+                </div>
+                <div class="form-control">
+                    <label class="w-fit flex gap-3 label cursor-pointer">
+                        <input name="skill" value="Next.js" type="checkbox" class="checkbox checkbox-accent" />
+                        <span class="label-text">Next.js</span>
+                    </label>
+                </div>
+                <div class="form-control">
+                    <label class="w-fit flex gap-3 label cursor-pointer">
+                        <input name="skill" value="React.js" type="checkbox" class="checkbox checkbox-accent" />
+                        <span class="label-text">React.js</span>
+                    </label>
+                </div>
+                <div class="form-control">
+                    <label class="w-fit flex gap-3 label cursor-pointer">
+                        <input name="skill" value="Node.js" type="checkbox" class="checkbox checkbox-accent" />
+                        <span class="label-text">Node.js</span>
+                    </label>
+                </div>
+            </fieldset>
+            <div class="text-center">
+                <button type="submit"
+                    class="btn btn-accent rounded-full font-medium text-white">
+                    Generate Link
+                </button>
+                <a id="url" class="rounded-full btn btn-outline btn-accent btn-disabled" href="">Resume Link</a>
+            </div>
+            <div>
+            </div>
+        </form>
+    </div>
+
+    <div id="generated-resume" class="hidden w-full lg:max-w-xl">
+        <h2 class="text-4xl font-bold text-center uppercase">Generated Resume</h2>
+        <div id="resume-display" class="flex justify-center p-4">
+            <div id="generated-resume-wrapper"
+                class="flex flex-col gap-6 max-w-4xl bg-white p-4 rounded-xl border-2 border-black"
+                contenteditable="true">
+                <div class="flex gap-3 items-center">
+                    <img id="userAvatar" class="w-32 border-2 border-teal-700 rounded-full" src="" alt="profile picture">
+                    <div class="flex flex-col gap-3">
+                        <h2 class="text-4xl font-bold text-teal-700"><span id="name"></span></h2>
+                        <h4 class="text-xl font-medium"><span id="title"></span></h4>
+                        <p class="flex gap-3 py-1 px-4 bg-teal-700 rounded-full text-white">
+                            <i class="w-4" data-lucide="phone"></i>
+                            <span id="phone"></span>
+                        </p>
+                        <p class="flex gap-3 py-1 px-4 bg-teal-700 rounded-full text-white">
+                            <i class="w-4" data-lucide="mail"></i>
+                            <span id="email"></span>
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-3xl font-semibold mb-4">About</h2>
+                    <p id="about"></p>
+                </div>
+
+                <div>
+                    <h2 class="text-3xl font-semibold mb-4">Experience</h2>
+                    <p class="text-sm"><span id="jobStart"></span> - <span id="jobEnd"></span>
+                    </p>
+                    <p class="text-lg font-medium"><span id="jobTitle"></span></p>
+                    <p class="text-sm"><span id="jobInstitute"></span></p>
+                </div>
+
+                <div>
+                    <h2 class="text-3xl font-semibold mb-4">Skills</h2>
+                    <p><span id="user-skills"></span></p>
+                </div>
+
+                <div>
+                    <h2 class="text-3xl font-semibold mb-4">Education</h2>
+                    <p class="text-sm"><span id="degreeStart"></span> - <span id="degreeEnd"></span></p>
+                    <p class="text-lg font-medium"><span id="degreeTitle"></span></p>
+                    <p class="text-sm"><span id="degreeInstitute"></span></p>
+                </div>
+
+                <div>
+                    <h2 class="text-3xl font-semibold mb-4">Certifications</h2>
+                    <p class="text-sm"><span id="certificationStart"></span> - <span
+                            id="certificationEnd"></span></p>
+                    <p class="">
+                        <span class="text-lg font-medium" id="certficationTitle"></span>,
+                        <span id="certificationInstitute"></span>
+                    </p>
+                    <p class="text-sm"></p>
+                </div>
+            </div>
+            <!-- Resume will be generated below -->
+        </div>
+        <div class="text-center w-60">
+            <button id="print" type="submit"
+                class="btn btn-wide btn-accent rounded-full font-medium text-white">
+                Print
+            </button>
+            <button onclick="location.reload()" type="submit"
+            class="btn btn-wide btn-accent btn-outline rounded-full font-medium text-white">
+            Back
+        </button>
+        </div>
+
+    </div>
+
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
